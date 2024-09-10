@@ -1,5 +1,5 @@
 <odoo>
-    <!-- Acción para abrir la vista lista de test.model -->
+    <!-- Acción para la vista de lista de test.model -->
     <record id="action_test_model" model="ir.actions.act_window">
         <field name="name">Test Model</field>
         <field name="res_model">test.model</field>
@@ -11,4 +11,11 @@
             </p>
         </field>
     </record>
+
+    <!-- Menú principal para Test Model -->
+    <menuitem id="menu_test_model_main" name="Test Model" sequence="10"/>
+
+    <!-- Submenú para la lista de Test Model -->
+    <menuitem id="menu_test_model_list" name="Test Model List" parent="menu_test_model_main"
+              action="action_test_model" sequence="10"/>
 </odoo>
