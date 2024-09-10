@@ -1,0 +1,13 @@
+<odoo>
+    <!-- Menú principal que aparece en el dashboard -->
+    <menuitem id="menu_test_model_main" name="Test Model" sequence="1"/>
+
+    <!-- Submenú para la vista de lista de Test Model -->
+    <menuitem id="menu_test_model_list" name="Test Model List" parent="menu_test_model_main" action="action_test_model_tree" sequence="10"/>
+    
+    <!-- Submenú para la vista de formulario de Test Model -->
+    <menuitem id="menu_test_model_form" name="Test Model Form" parent="menu_test_model_main" action="action_test_model_form" sequence="10"/>
+
+    <!-- Submenú para la vista de search de Test Model -->
+    <menuitem id="menu_test_model_list" name="Test Model List" parent="menu_test_model_main" action="action_test_model_search" sequence="10"/>
+</odoo>

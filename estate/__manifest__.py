@@ -5,12 +5,8 @@
     "depends": ["base"],  # dependencies
     "data": [
         'security/ir.model.access.csv',
-        'views/estate_property_views.xml',
-        'views/list_views.xml',
-        'views/form_views.xml',
-        'views/search_views.xml',
-        'views/test_model_views.xml',
-        
+        'views/views.xml',  # Archivo con las vistas y acciones
+        'views/menu.xml',   # Archivo con el menú        
 
     ],
     "installable": True,
