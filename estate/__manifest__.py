@@ -9,6 +9,7 @@
         'views/list_views.xml',
         'views/form_views.xml',
         'views/search_views.xml',
+        'views/test_model_views.xml',
         
 
     ],

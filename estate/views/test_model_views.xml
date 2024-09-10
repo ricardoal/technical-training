@@ -1,0 +1,14 @@
+<odoo>
+    <!-- Acción para abrir la vista lista de test.model -->
+    <record id="action_test_model" model="ir.actions.act_window">
+        <field name="name">Test Model</field>
+        <field name="res_model">test.model</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_test_model_tree"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea tus registros de Test Model
+            </p>
+        </field>
+    </record>
+</odoo>
