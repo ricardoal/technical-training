@@ -1,0 +1,29 @@
+<odoo>
+    <!-- Vista de búsqueda (search view) para test.model -->
+    <record id="view_test_model_search" model="ir.ui.view">
+        <field name="name">test.model.search.view</field>
+        <field name="model">test.model</field>
+        <field name="arch" type="xml">
+            <search string="Buscar en Test Model">
+                <!-- Campos para búsqueda rápida -->
+                <field name="name"/>
+                <field name="postcode"/>
+                <field name="expected_price"/>
+                <field name="bedrooms"/>
+                <field name="living_area"/>
+
+                <!-- Filtros predefinidos -->
+                <filter string="Con Garage" name="filter_garage" domain="[('garage', '=', True)]"/>
+                <filter string="Con Jardín" name="filter_garden" domain="[('garden', '=', True)]"/>
+                <filter string="Precio &gt; 100,000" name="filter_price_high" domain="[('expected_price', '&gt;', 100000)]"/>
+                <filter string="Precio &lt; 100,000" name="filter_price_low" domain="[('expected_price', '&lt;', 100000)]"/>
+
+                <!-- Agrupaciones -->
+                <group expand="1" string="Agrupar por">
+                    <filter string="Número de habitaciones" name="group_bedrooms" context="{'group_by':'bedrooms'}"/>
+                    <filter string="Orientación del jardín" name="group_garden_orientation" context="{'group_by':'garden_orientation'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+</odoo>
